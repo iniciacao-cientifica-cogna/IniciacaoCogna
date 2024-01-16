@@ -4,11 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BFFF5722"
+    android:background="@drawable/background_main_activity"
+    android:gravity="center|center_vertical"
     android:orientation="vertical"
     android:paddingLeft="32dp"
-    android:paddingTop="50dp"
     android:paddingRight="32dp"
-    tools:context="Activity.Cadastro">
+    tools:context="Activity.MainActivity">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/baloo"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="20sp"
+        android:text="Cadastro de Aluno"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/NomeDeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_nome"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Nome completo"
+        android:inputType="text"
+        android:padding="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_nome"
+        android:drawableLeft="@drawable/baseline_android_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/ConfirmaSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_nome"
+        android:drawableLeft="@drawable/baseline_android_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2"
+        android:drawableLeft="@drawable/baseline_alternate_email_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="E-mail" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Cadastrar" />
+
+ </androidx.appcompat.widget.LinearLayoutCompat>

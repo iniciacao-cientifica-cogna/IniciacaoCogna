@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="Activity.MainActivity" >
+    tools:context="Activity.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/LoginUsuario"
+        android:id="@+id/NomeDeUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -58,7 +58,7 @@
         android:textColorHint="#F6F0F2" />
 
     <Button
-        android:id="@+id/Login"
+        android:id="@+id/cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -69,10 +69,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/background_cadastro"
+        android:fontFamily="@font/cantora_one"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         tools:text="Cadastro de aluno" />
 
