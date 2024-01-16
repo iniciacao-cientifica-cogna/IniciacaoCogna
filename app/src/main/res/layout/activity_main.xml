@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_activity"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    tools:context="Activity.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/baloo"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="20sp"
+        android:text="Iniciação Cientifica Cogna"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/LoginUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_nome"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:padding="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <EditText
+        android:id="@+id/Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_nome"
+        android:drawableLeft="@drawable/baseline_android_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/TelaDeCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:text="Cadastro de aluno" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
