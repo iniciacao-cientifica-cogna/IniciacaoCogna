@@ -26,7 +26,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/NomeDeUsuario"
+        android:id="@+id/CadastroDeUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -43,7 +43,7 @@
         android:textColorHint="#F6F0F2" />
 
     <EditText
-        android:id="@+id/Senha"
+        android:id="@+id/CadastroSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -72,7 +72,7 @@
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/CadastroDeEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -90,6 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:onClick="cadastro"
         android:text="Cadastrar" />
 
  </androidx.appcompat.widget.LinearLayoutCompat>

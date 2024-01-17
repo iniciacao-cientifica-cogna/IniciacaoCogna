@@ -16,9 +16,6 @@
             android:name="Activity.CadastroInciacaoCientifica"
             android:exported="false" />
         <activity
-            android:name=".CadastroIniciacaoCientifica"
-            android:exported="false" />
-        <activity
             android:name="Activity.Cadastro"
             android:exported="false" />
         <activity
