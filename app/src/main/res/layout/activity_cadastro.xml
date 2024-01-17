@@ -66,15 +66,16 @@
         android:drawableLeft="@drawable/baseline_android_24"
         android:drawablePadding="6dp"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="Confirma Senha"
         android:inputType="textPassword"
         android:padding="5dp"
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
     <EditText
         android:id="@+id/email"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:inputType="textEmailAddress"
         android:padding="5dp"
         android:textColor="#FDFBFB"
