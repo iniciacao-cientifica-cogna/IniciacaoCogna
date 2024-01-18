@@ -9,8 +9,6 @@ import com.example.cogna.R;
 
 public class CadastroInciacaoCientifica extends AppCompatActivity {
 
-    Spinner activity_cadastro_iniciacao_cientifica_editText_sexo_recebido;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

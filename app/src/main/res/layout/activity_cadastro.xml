@@ -11,6 +11,7 @@
     android:paddingRight="32dp"
     tools:context="Activity.MainActivity">
 
+    <!--logo de apresentação-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +26,7 @@
         android:textSize="28sp"
         android:textStyle="bold" />
 
+    <!--captura nome de usuário-->
     <EditText
         android:id="@+id/CadastroDeUsuario"
         android:layout_width="wrap_content"
@@ -42,6 +44,7 @@
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
 
+    <!--captura senha de usuário-->
     <EditText
         android:id="@+id/CadastroSenha"
         android:layout_width="wrap_content"
@@ -57,6 +60,7 @@
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
 
+    <!--verifica se as senhas são iguais-->
     <EditText
         android:id="@+id/ConfirmaSenha"
         android:layout_width="wrap_content"
@@ -71,6 +75,8 @@
         android:padding="5dp"
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
+
+    <!--cadastro do e-mail-->
     <EditText
         android:id="@+id/CadastroDeEmail"
         android:layout_width="match_parent"
@@ -85,6 +91,7 @@
         android:ems="10"
         android:hint="E-mail" />
 
+    <!--captura os dados e envia para o banco de dados-->
     <Button
         android:id="@+id/cadastrar"
         android:layout_width="wrap_content"
