@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "919815717360",
+    "project_id": "iniciacaocogna-ed598",
+    "storage_bucket": "iniciacaocogna-ed598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919815717360:android:ad94d98bea29ca29f51d35",
+        "android_client_info": {
+          "package_name": "com.example.cogna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcV1ooTnRaAwaFwFqDhHtT_GH0V6nkbhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
