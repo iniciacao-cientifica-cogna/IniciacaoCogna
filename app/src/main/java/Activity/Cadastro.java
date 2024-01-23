@@ -1,5 +1,6 @@
 package Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,9 +12,17 @@ import android.widget.Toast;
 
 import com.example.cogna.R;
 import com.google.android.gms.common.server.converter.StringToIntConverter;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 import model.Usuario;
+import model.util.ConfiguracaoBD;
 
 public class Cadastro extends AppCompatActivity {
     //objeto usuário
@@ -28,6 +37,7 @@ public class Cadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
+        FirebaseApp.initializeApp(this);
     inicializar();
     }
 
@@ -48,11 +58,10 @@ public class Cadastro extends AppCompatActivity {
         //validacao
         if (!nome.isEmpty()){
             if(!senha.isEmpty()){
-                if(!confirmaSenha.isEmpty()){
-                    if(confirmaSenha != senha){
-                        if(!email.isEmpty()){
+                if(!confirmaSenha.isEmpty() && confirmaSenha.equals(senha)){
+                    if(!email.isEmpty()){
 
-                        Usuario usuario = new Usuario();
+                        usuario = new Usuario();
 
                         usuario.setNome(nome);
                         usuario.setSenha(senha);
@@ -61,14 +70,11 @@ public class Cadastro extends AppCompatActivity {
                         //cadastro do usuario
                         cadastrarUsuario();
 
-                        }else {
-                            Toast.makeText(this, "Preencha o e-mail", Toast.LENGTH_SHORT).show();
-                             }
-                    }else{
-                        Toast.makeText(this, "Senhas não são iguais", Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(this, "Preencha o e-mail", Toast.LENGTH_SHORT).show();
                     }
                 }else {
-                    Toast.makeText(this, "Preencha a senha", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Senhas não conferem", Toast.LENGTH_SHORT).show();
                 }
             }else{
                 Toast.makeText(this, "Preencha a senha", Toast.LENGTH_SHORT).show();
@@ -79,5 +85,31 @@ public class Cadastro extends AppCompatActivity {
     }
 
     private void cadastrarUsuario() {
+        autenticacao = ConfiguracaoBD.firebaseautenticacao();
+        autenticacao.createUserWithEmailAndPassword(
+                usuario.getEmail(), usuario.getSenha()
+        ).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(Cadastro.this, "Sucesso ao cadastrar o usuario", Toast.LENGTH_SHORT).show();
+                }else{
+                      String excecao = "";
+                      try {
+                          throw task.getException();
+                      }catch (FirebaseAuthWeakPasswordException e){
+                          excecao = "Digite uma senha mais forte";
+                      }catch (FirebaseAuthInvalidCredentialsException e){
+                          excecao = "Digite um e-mail válido";
+                      }catch (FirebaseAuthUserCollisionException e){
+                          excecao = "Esta conta já exixte";
+                      } catch (Exception e){
+                          excecao = "Erro ao cadastrar usuario"+ e.getMessage();
+                          e.printStackTrace();
+                      }
+                    Toast.makeText(Cadastro.this, excecao, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }

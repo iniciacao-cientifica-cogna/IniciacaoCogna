@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    tools:context="Activity.MainActivity">
+    tools:context="Activity.Cadastro">
 
     <!--logo de apresentação-->
     <TextView
@@ -24,7 +24,7 @@
         android:text="Cadastro de Aluno"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="28sp"
+        android:textSize="28dp"
         android:textStyle="bold" />
 
     <!--captura nome de usuário-->
@@ -95,11 +95,16 @@
     <!--captura os dados e envia para o banco de dados-->
     <Button
         android:id="@+id/cadastrar"
-        android:background="@drawable/background_botao_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_botao_email"
         android:onClick="validarCampos"
-        android:text="Cadastrar" />
+        android:text="Cadastrar"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

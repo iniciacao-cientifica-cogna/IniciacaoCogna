@@ -2,7 +2,7 @@ package model.util;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-//classe para cpnfiguração do firebase
+//classe para configuração do firebase
 public class ConfiguracaoBD {
     //atributo
     private static FirebaseAuth auth;
@@ -12,6 +12,7 @@ public class ConfiguracaoBD {
         //verifica se existe uma instancia no firebase válida
         if(auth == null){
             auth =FirebaseAuth.getInstance();
+
         }
         return auth;
     }
