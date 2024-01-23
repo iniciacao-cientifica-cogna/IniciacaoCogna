@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_main_activity"
     android:gravity="center|center_vertical"
+    android:onClick="validarCampos"
     android:orientation="vertical"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
@@ -82,22 +83,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:inputType="textEmailAddress"
-        android:padding="5dp"
-        android:textColor="#FDFBFB"
-        android:textColorHint="#F6F0F2"
         android:drawableLeft="@drawable/baseline_alternate_email_24"
         android:drawablePadding="6dp"
         android:ems="10"
-        android:hint="E-mail" />
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2" />
 
     <!--captura os dados e envia para o banco de dados-->
     <Button
         android:id="@+id/cadastrar"
+        android:background="@drawable/background_botao_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:onClick="cadastro"
+        android:onClick="validarCampos"
         android:text="Cadastrar" />
 
- </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
