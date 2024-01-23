@@ -45,12 +45,11 @@ dependencies {
 
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
-    //implementation ("com.google.firebase:firebase-auth:23.0.0")
-    //implementation ("com.google.firebase:firebase-database:23.0.0")
+
 
     // TODO: Add the dependencies for Firebase products you want to use
     // When using the BoM, don't specify versions in Firebase dependencies
-    //implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-analytics")
 
     //autenticação
     implementation("com.google.firebase:firebase-auth:22.3.1")
