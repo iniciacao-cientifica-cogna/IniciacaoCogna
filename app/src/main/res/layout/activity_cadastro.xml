@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main_activity"
+    android:background="@drawable/background_activity_cadastro"
     android:gravity="center|center_vertical"
     android:onClick="validarCampos"
     android:orientation="vertical"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/background_botao_nome"
+        android:background="@drawable/background_botao_nome_tela_cadastro"
         android:drawableLeft="@drawable/baseline_person_24"
         android:drawablePadding="6dp"
         android:ems="10"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/background_botao_nome"
+        android:background="@drawable/background_botao_senha_tela_cadastro"
         android:drawableLeft="@drawable/baseline_android_24"
         android:drawablePadding="6dp"
         android:ems="10"
@@ -61,13 +61,13 @@
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
 
-    <!--verifica se as senhas são iguais-->
+    <!--Captura novamente a senha-->
     <EditText
         android:id="@+id/ConfirmaSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/background_botao_nome"
+        android:background="@drawable/background_botao_senha_tela_cadastro"
         android:drawableLeft="@drawable/baseline_android_24"
         android:drawablePadding="6dp"
         android:ems="10"
@@ -77,12 +77,13 @@
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
 
-    <!--cadastro do e-mail-->
+    <!-- captura o e-mail do usuário-->
     <EditText
         android:id="@+id/CadastroDeEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_email_tela_cadastro"
         android:drawableLeft="@drawable/baseline_alternate_email_24"
         android:drawablePadding="6dp"
         android:ems="10"
@@ -92,19 +93,32 @@
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2" />
 
-    <!--captura os dados e envia para o banco de dados-->
+    <!--captura os dados e envia para a classe Cadastro.class em java-->
     <Button
         android:id="@+id/cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/background_botao_email"
+        android:background="@drawable/background_botao_cadastrar_tela_cadastro"
         android:onClick="validarCampos"
         android:text="Cadastrar"
         android:textColor="#FDFBFB"
         android:textColorHint="#F6F0F2"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/VoltarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_botao_nome_tela_principal"
+        android:onClick="telaInicial"
+        android:text="Inicio"
+        android:textColor="#FDFBFB"
+        android:textColorHint="#F6F0F2"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

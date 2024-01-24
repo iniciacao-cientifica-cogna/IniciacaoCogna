@@ -32,16 +32,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/background_botao_nome"
+        android:background="@drawable/background_botao_nome_tela_principal"
         android:drawableLeft="@drawable/baseline_person_24"
         android:drawablePadding="6dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="text"
-        android:padding="5dp"
+        android:padding="8dp"
         android:selectAllOnFocus="true"
         android:singleLine="true"
-        android:textColor="#FDFBFB"
+        android:textColor="#FFFFFF"
         android:textColorHint="#F6F0F2" />
 
     <!--opção para inserir senha de usuário-->
@@ -49,24 +49,32 @@
         android:id="@+id/Senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/background_botao_nome"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_botao_senha_tela_principal"
         android:drawableLeft="@drawable/baseline_android_24"
         android:drawablePadding="6dp"
         android:ems="10"
         android:hint="Senha"
+        android:padding="8dp"
         android:inputType="textPassword"
-        android:padding="5dp"
-        android:textColor="#FDFBFB"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
         android:textColorHint="#F6F0F2" />
 
-    <!--botão para enviar os dados para o banco de dados-->
+    <!--botão para verificar usuário e senha no banco de dados-->
     <Button
         android:id="@+id/cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_botao_login_tela_principal"
+        android:fontFamily="@font/cantora_one"
+        android:onClick="validarAutenticacao"
+        android:padding="8dp"
         android:text="Login"
-        android:layout_marginBottom="10dp" />
+        android:ems="3"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <!--botão para de redirecionamento para a tela de cadastro-->
     <Button
@@ -74,12 +82,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/background_cadastro"
+        android:background="@drawable/background_botao_cadastrar_tela_principal"
         android:fontFamily="@font/cantora_one"
         android:text="Cadastre-se"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         tools:text="Cadastro de aluno" />
 

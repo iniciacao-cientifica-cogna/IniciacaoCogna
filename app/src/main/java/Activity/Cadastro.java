@@ -30,9 +30,9 @@ public class Cadastro extends AppCompatActivity {
     //objeto autenticacao
     FirebaseAuth autenticacao;
 
+    //variaveis globais para receber os dados do cadastro do usuario
     EditText campoNome, campoEmail, campoSenha, campoConfirmaSenha;
     Button botaoCadastro;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,6 @@ public class Cadastro extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
     inicializar();
     }
-
         //método para inicializar os componentes
     private void inicializar(){
         campoNome = findViewById(R.id.CadastroDeUsuario);
@@ -83,6 +82,12 @@ public class Cadastro extends AppCompatActivity {
             Toast.makeText(this, "Preencha o nome", Toast.LENGTH_SHORT).show();
             }
     }
+    //redirecionamento para a tela principal
+    private void telaInicial(View view){
+        Intent i = new Intent(Cadastro.this,MainActivity.class);
+        startActivity(i);
+    }
+
 
     private void cadastrarUsuario() {
         autenticacao = ConfiguracaoBD.firebaseautenticacao();
