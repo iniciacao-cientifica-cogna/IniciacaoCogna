@@ -2,9 +2,51 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/activity_logado"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Activity.Logado">
+
+    <CheckBox
+        android:id="@+id/como_previsto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como previsto"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/adiantado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adiantado"
+        android:onClick="onCheckboxClicked"
+
+        />
+
+    <CheckBox
+        android:id="@+id/atrasado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrasado"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/nao_iniciado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não iniciado"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/concluido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Concluido"
+        android:onClick="onCheckboxClicked"
+        />
 
     <Button
         android:id="@+id/button"
@@ -13,7 +55,6 @@
         android:layout_marginTop="240dp"
         android:onClick="deslogar"
         android:text="Deslogar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
