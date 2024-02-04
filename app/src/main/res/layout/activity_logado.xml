@@ -7,13 +7,18 @@
     android:layout_height="match_parent"
     tools:context="Activity.Logado">
 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
     <CheckBox
         android:id="@+id/como_previsto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Como previsto"
         android:onClick="onCheckboxClicked"
-        />
+        />                                                           
 
     <CheckBox
         android:id="@+id/adiantado"
@@ -48,6 +53,7 @@
         android:onClick="onCheckboxClicked"
         />
 
+    </LinearLayout>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
