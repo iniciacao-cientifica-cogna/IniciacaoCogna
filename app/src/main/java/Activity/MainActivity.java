@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //método para manter o usuário logado na aplicação
     private void abrirLogado() {
-        Intent i = new Intent(MainActivity.this,Logado.class);
+        Intent i = new Intent(MainActivity.this,Area.class);
         startActivity(i);
     }
     @Override

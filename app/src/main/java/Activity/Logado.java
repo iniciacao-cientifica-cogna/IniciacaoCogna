@@ -9,12 +9,15 @@ import android.widget.Toast;
 
 import com.example.cogna.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import model.util.ConfiguracaoBD;
 
 public class Logado extends AppCompatActivity {
 
     private FirebaseAuth auth;
+
+    //private val db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +52,6 @@ public class Logado extends AppCompatActivity {
             Toast.makeText(this, "Concluido", Toast.LENGTH_SHORT).show();
         }
     }
-
-
     public void deslogar(View view){
         try {
             auth.signOut();
