@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_activity_farmacia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="Activity.Farmacia">
+
+        <TextView
+            android:id="@+id/cronograma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ems="10"
+            android:text="Cronograma de Atividades"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/baloo"
+            />
+
+        <TextView
+            android:id="@+id/levantamentoBiologico"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Levantamento Biologico"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo"
+            />
+
+        <CheckBox
+            android:id="@+id/como_previsto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Como previsto"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/baloo"
+            android:textSize="10sp"
+            />
+
+        <CheckBox
+            android:id="@+id/adiantado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adiantado"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/baloo"
+            android:textSize="10sp"
+            />
+
+        <CheckBox
+            android:id="@+id/atrasado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atrasado"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/baloo"
+            android:textSize="10sp"
+            />
+
+        <CheckBox
+            android:id="@+id/nao_iniciado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não iniciado"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/baloo"
+            android:textSize="10sp"
+            />
+
+        <CheckBox
+            android:id="@+id/concluido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concluido"
+            android:onClick="onCheckboxClicked"
+            android:fontFamily="@font/baloo"
+            android:textSize="10sp"
+            />
+
+   </androidx.appcompat.widget.LinearLayoutCompat>

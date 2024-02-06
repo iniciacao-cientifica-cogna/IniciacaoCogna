@@ -9,11 +9,10 @@ import android.widget.Toast;
 
 import com.example.cogna.R;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import model.util.ConfiguracaoBD;
 
-public class Logado extends AppCompatActivity {
+public class Farmacia extends AppCompatActivity {
 
     private FirebaseAuth auth;
 
@@ -22,7 +21,7 @@ public class Logado extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_logado);
+        setContentView(R.layout.activity_farmacia);
 
         //autenticação no firebase
         auth = ConfiguracaoBD.firebaseautenticacao();
