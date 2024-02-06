@@ -7,10 +7,63 @@
     android:layout_height="match_parent"
     tools:context="Activity.Logado">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
+<<<<<<< HEAD
+=======
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cronograma de Atividades"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Areas:"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Farmácia e Biotecnologia e Inovação em Saúde - 2023-00203"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Levantamento Biologico"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp" />
+        <CheckBox
+
+        android:id="@+id/como_previsto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como previsto"
+        android:onClick="onCheckboxClicked"
+
+        />
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
 
         <TextView
             android:id="@+id/textViewTitle"
@@ -66,6 +119,7 @@
             android:textSize="12sp"
             />
 
+<<<<<<< HEAD
         <CheckBox
             android:id="@+id/atrasado"
             android:layout_width="wrap_content"
@@ -96,24 +150,38 @@
             android:textSize="12sp"
             />
 
+=======
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
         <TextView
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TCLE e Aplicações do Questionario "
             android:textSize="15sp"
+<<<<<<< HEAD
             android:layout_marginTop="10dp"
             android:fontFamily="@font/baloo"
             />
 
         <CheckBox
+=======
+            android:layout_marginTop="16dp" />
+
+
+        <CheckBox
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             android:id="@+id/como_previsto2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Como previsto"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
             android:textSize="12sp"
+=======
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -122,8 +190,12 @@
             android:layout_height="wrap_content"
             android:text="Adiantado"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
             android:textSize="12sp"
+=======
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -132,8 +204,11 @@
             android:layout_height="wrap_content"
             android:text="Atrasado"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
             android:textSize="12sp"
+=======
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -142,8 +217,11 @@
             android:layout_height="wrap_content"
             android:text="Não iniciado"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
             android:textSize="12sp"
+=======
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -152,8 +230,11 @@
             android:layout_height="wrap_content"
             android:text="Concluido"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
             android:textSize="12sp"
+=======
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <TextView
@@ -162,17 +243,28 @@
             android:layout_height="wrap_content"
             android:text="Revisão Bibliografica "
             android:textSize="15sp"
+<<<<<<< HEAD
             android:layout_marginTop="16dp"
             android:fontFamily="@font/baloo"
                       />
 
         <CheckBox
+=======
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             android:id="@+id/como_previsto3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Como previsto"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
+=======
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -181,7 +273,11 @@
             android:layout_height="wrap_content"
             android:text="Adiantado"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
+=======
+
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -190,7 +286,10 @@
             android:layout_height="wrap_content"
             android:text="Atrasado"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
+=======
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -199,7 +298,10 @@
             android:layout_height="wrap_content"
             android:text="Não iniciado"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
+=======
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
             />
 
         <CheckBox
@@ -208,6 +310,7 @@
             android:layout_height="wrap_content"
             android:text="Concluido"
             android:onClick="onCheckboxClicked"
+<<<<<<< HEAD
             android:fontFamily="@font/baloo"
             />
 
@@ -219,6 +322,19 @@
             android:onClick="deslogar"
             android:text="Deslogar"
             android:fontFamily="@font/baloo"
+=======
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:onClick="deslogar"
+        android:text="Deslogar"
+>>>>>>> 2035b554ad856557f0fc117a7583907291e665fc
         />
     </LinearLayout>
 
