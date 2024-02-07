@@ -13,19 +13,19 @@
         android:theme="@style/Theme.Cogna"
         tools:targetApi="31">
         <activity
-            android:name="Activity.tic"
+            android:name="Activity.TIC"
             android:exported="false" />
         <activity
-            android:name="Activity.ciencia"
+            android:name="Activity.Ciencia"
             android:exported="false" />
         <activity
-            android:name="Activity.meioAmbiente"
+            android:name="Activity.MeioAmbiente"
             android:exported="false" />
         <activity
-            android:name="Activity.direito"
+            android:name="Activity.Direito"
             android:exported="false" />
         <activity
-            android:name="Activity.medicina"
+            android:name="Activity.Medicina"
             android:exported="false" />
         <activity
             android:name="Activity.Odontologia"

@@ -59,14 +59,13 @@
             />
 
         <Button
-            android:id="@+id/Medicina"
+            android:id="@+id/medicina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onclick="medicina"
-            android:text="Medicina veterinária"
             android:layout_marginLeft="110dp"
             android:fontFamily="@font/baloo"
-            />
+            android:onClick="medico"
+            android:text="Medicina veterinária" />
 
         <Button
             android:id="@+id/Direito"

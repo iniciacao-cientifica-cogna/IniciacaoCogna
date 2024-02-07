@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Activity.tic">
+    android:background="@drawable/background_telas_areas"
+    tools:context="Activity.TIC">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

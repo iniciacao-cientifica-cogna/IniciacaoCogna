@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import com.example.cogna.R;
 
@@ -20,21 +19,21 @@ public class Area extends AppCompatActivity {
         Intent TelaFarmacia = new Intent(getApplicationContext(), Farmacia.class);
         startActivity(TelaFarmacia);
     }
-    public void medicina(View view){
-        Intent TelaMedicina = new Intent(getApplicationContext(), medicina.class);
-        startActivity(TelaMedicina);
-    }
 
+    public void medico(View view){
+         Intent Telamedicina = new Intent(getApplicationContext(), Medicina.class);
+         startActivity(Telamedicina);
+    }
     public void ciencia(View view){
-        Intent TelaCiencia = new Intent(getApplicationContext(), ciencia.class);
+        Intent TelaCiencia = new Intent(getApplicationContext(), Ciencia.class);
         startActivity(TelaCiencia);
     }
     public void tic(View view){
-        Intent TelaTIC = new Intent(getApplicationContext(), tic.class);
+        Intent TelaTIC = new Intent(getApplicationContext(), TIC.class);
         startActivity(TelaTIC);
     }
     public void meio(View view){
-        Intent TelaMeio = new Intent(getApplicationContext(), meioAmbiente.class);
+        Intent TelaMeio = new Intent(getApplicationContext(), MeioAmbiente.class);
         startActivity(TelaMeio);
     }
     public void odontologia(View view){
@@ -42,10 +41,9 @@ public class Area extends AppCompatActivity {
         startActivity(Telaodontologia);
     }
     public void direito(View view){
-        Intent TelaoDireito = new Intent(getApplicationContext(),direito.class);
+        Intent TelaoDireito = new Intent(getApplicationContext(), Direito.class);
         startActivity(TelaoDireito);
     }
-
     public void agronomia(View view){
         Intent TelaAgronomia = new Intent(getApplicationContext(), Agronomia.class);
         startActivity(TelaAgronomia);

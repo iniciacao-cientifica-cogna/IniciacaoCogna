@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.cogna.R;
 
-public class ciencia extends AppCompatActivity {
+public class Direito extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ciencia);
+        setContentView(R.layout.activity_direito);
     }
 }

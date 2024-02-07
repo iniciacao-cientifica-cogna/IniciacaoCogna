@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Activity.meioAmbiente">
+    android:background="@drawable/background_telas_areas"
+    tools:context="Activity.MeioAmbiente">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

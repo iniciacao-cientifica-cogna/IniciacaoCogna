@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.cogna.R;
 
-public class medicina extends AppCompatActivity {
+public class TIC extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_medicina);
+        setContentView(R.layout.activity_tic);
     }
 }
