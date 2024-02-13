@@ -12,14 +12,16 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import model.util.ConfiguracaoBD;
 
-public class Logado extends AppCompatActivity {
+public class Farmacia extends AppCompatActivity {
 
     private FirebaseAuth auth;
+
+    //private val db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_logado);
+        setContentView(R.layout.activity_farmacia);
 
         //autenticação no firebase
         auth = ConfiguracaoBD.firebaseautenticacao();
@@ -49,8 +51,6 @@ public class Logado extends AppCompatActivity {
             Toast.makeText(this, "Concluido", Toast.LENGTH_SHORT).show();
         }
     }
-
-
     public void deslogar(View view){
         try {
             auth.signOut();
