@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cronograma" />
     <Spinner
-        android:entries="@array/activity_direito_spinner"
+        android:entries="@array/activity_plano_de_trabalho_spinner"
         android:id="@+id/activity_medicina_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

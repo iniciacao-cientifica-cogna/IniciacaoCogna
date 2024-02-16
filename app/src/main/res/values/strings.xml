@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Cogna</string>
-    <string-array name="activity_direito_spinner">
+    <string-array name="activity_plano_de_trabalho_spinner">
         <item>Como previsto</item>
         <item>Adiantado</item>
         <item>trasado</item>
