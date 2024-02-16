@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Cogna</string>
+    <string-array name="activity_direito_spinner">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>trasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
 </resources>
