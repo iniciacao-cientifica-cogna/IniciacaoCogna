@@ -1,45 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_telas_areas"
     tools:context="Activity.Ciencia">
-    <TextView
-        android:id="@+id/cronograma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/baloo"
-        android:gravity="center"
-        android:text="Cronograma de Atividades"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/cronograma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Cronograma de Atividades"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/levantamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Levantamento bibliográfico"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_levantamento_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/levantamento"
+            android:textColor="#000000">
+        </Spinner>
 
 
-    <TextView
-        android:id="@+id/levantamentoDireito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/baloo"
-        android:gravity="center"
-        android:text="Levantamento de ciência"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cronograma" />
-    <Spinner
-        android:entries="@array/activity_plano_de_trabalho_spinner"
-        android:id="@+id/activity_ciencia_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levantamentoDireito"></Spinner>
+        <TextView
+            android:id="@+id/capacitacao_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Capacitação da equipe"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="#000000"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_capacitacao_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/capacitacao_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/divulgacao_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Divulgação do projeto"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_divulgacao_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divulgacao_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/selecao_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Seleção da amostra"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_selecao_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selecao_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/coleta_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Coleta de dados"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_coleta_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coleta_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tabulacao_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Tabulação dos resultados"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_tabulacao_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabulacao_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/analise_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Análises dos resultados iniciais"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_analise_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analise_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/redacao_ciencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Redação de trabalhos para evento cientifico"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_ciencia"
+            android:id="@+id/pergunta_redacao_ciencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/redacao_ciencia_ciencia"
+            android:textColor="#000000">
+        </Spinner>
+
+
+
+        <Button
+            android:id="@+id/submeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_botao_nome_tela_principal"
+            android:onClick="submeterDadosCiencia"
+            android:text="Submeter dados"
+            android:textColor="#000000"
+            android:textColorHint="#F6F0F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -13,7 +13,6 @@ public class Medicina extends AppCompatActivity {
 
     //atributos para recebimentos dos valores selecionados pelos alunos
     Spinner pergunta_treinamento, pergunta_coleta, pergunta_analise, pergunta_apresentacao, pergunta_discussao, pergunta_redacao, pergunta_publicaçao;
-    Spinner activity_medicina_spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

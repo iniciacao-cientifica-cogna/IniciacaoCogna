@@ -10,12 +10,10 @@ import com.example.cogna.R;
 
 public class Direito extends AppCompatActivity {
 
-    Spinner activity_direito_spinner;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_direito);
-        activity_direito_spinner = findViewById(R.id.activity_direito_spinner);
+
     }
 }
