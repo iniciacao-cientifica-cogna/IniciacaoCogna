@@ -5,47 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_telas_areas"
-<<<<<<< HEAD
     tools:context="Activity.Medicina" >
-=======
-    tools:context="Activity.Medicina">
-    <TextView
-        android:id="@+id/cronograma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/baloo"
-        android:gravity="center"
-        android:text="Cronograma de Atividades"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/levantamentoDireito"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/baloo"
-        android:gravity="center"
-        android:text="Levantamento de medicina"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cronograma" />
-    <Spinner
-        android:entries="@array/activity_plano_de_trabalho_spinner"
-        android:id="@+id/activity_medicina_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levantamentoDireito"></Spinner>
-
->>>>>>> f582493f484d2f9c59a87df8bba38d6f0c19215f
 
     <LinearLayout
         android:orientation="vertical"
