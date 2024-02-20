@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">Cogna</string>
+<<<<<<< HEAD
     <string-array name="spinner_medicina">
         <item>Como previsto</item>
         <item>Adiantado</item>
         <item>Atrasado</item>
+=======
+    <string-array name="activity_plano_de_trabalho_spinner">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>trasado</item>
+>>>>>>> f582493f484d2f9c59a87df8bba38d6f0c19215f
         <item>Não iniciado</item>
         <item>Concluido</item>
     </string-array>
