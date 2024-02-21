@@ -1,10 +1,37 @@
 <resources>
     <string name="app_name">Cogna</string>
-    <string-array name="activity_plano_de_trabalho_spinner">
+
+    <string-array name="spinner_medicina">
         <item>Como previsto</item>
         <item>Adiantado</item>
-        <item>trasado</item>
+        <item>Atrasado</item>
         <item>Não iniciado</item>
         <item>Concluido</item>
     </string-array>
+
+    <string-array name="spinner_odontologia">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
+    <string-array name="spinner_ciencia">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
+    <string-array name="spinner_meio_ambiente">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
+
 </resources>

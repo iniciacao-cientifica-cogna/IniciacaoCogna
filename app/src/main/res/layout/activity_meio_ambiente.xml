@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+
     <TextView
         android:id="@+id/levantamentoMeioAmbiente"
         android:layout_width="wrap_content"
@@ -28,12 +29,13 @@
         android:ems="10"
         android:fontFamily="@font/baloo"
         android:gravity="center"
-        android:text="Levantamento de meio amiente"
+        android:text="Levantamento de meio ambiente"
         android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cronograma" />
-    <!---PERGUBTAS -->
+    <!---PERGUNTAS -->
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -63,7 +65,7 @@
         android:id="@+id/activity_meio_ambiente_levantamentoBibliografico_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         android:layout_marginStart="95px"
@@ -89,7 +91,7 @@
         android:id="@+id/activity_meio_ambiente_STF_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         android:layout_marginStart="95px"
@@ -116,7 +118,7 @@
         android:id="@+id/activity_meio_ambiente_revisaoBibliografica_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         android:layout_marginStart="95px"
@@ -144,7 +146,7 @@
         android:id="@+id/activity_meio_ambiente_elaboracaoEscrita_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         android:layout_marginStart="95px"
@@ -171,7 +173,7 @@
         android:id="@+id/activity_meio_ambiente_analiseDiscurso_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         app:layout_constraintTop_toBottomOf="@id/analiseDiscurso"
@@ -198,7 +200,7 @@
         android:id="@+id/activity_meio_ambiente_revisãoDados_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         app:layout_constraintTop_toBottomOf="@id/RevisãoDados"
@@ -226,11 +228,30 @@
         android:id="@+id/activity_meio_ambiente_elaboracaoTextoFinal_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/activity_plano_de_trabalho_spinner"
+        android:entries="@array/spinner_meio_ambiente"
         android:gravity="center"
         android:textAlignment="textStart"
         app:layout_constraintTop_toBottomOf="@id/elaboracaoTextoFinal"
         android:layout_marginStart="95px"/>
+
+    <Button
+        android:id="@+id/submeterBotao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_botao_nome_tela_principal"
+        android:onClick="submeterDadosMeioAmbiente"
+        android:text="Submeter dados"
+        android:textColor="#000000"
+        android:textColorHint="#F6F0F2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_elaboracaoTextoFinal_spinner" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
