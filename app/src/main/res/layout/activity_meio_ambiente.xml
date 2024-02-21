@@ -9,6 +9,7 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     tools:context="Activity.MeioAmbiente">
+<<<<<<< HEAD
 
     <LinearLayout
         android:orientation="vertical"
@@ -252,3 +253,254 @@
 
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
+=======
+    <!--- MENSAGENS INICIAIS -->
+    <TextView
+        android:id="@+id/cronograma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Cronograma de Atividades"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/levantamentoMeioAmbiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Levantamento de meio ambiente"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cronograma" />
+    <!---PERGUNTAS -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/levantamentoBibliografico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Levantamento Biblíografico:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/levantamentoMeioAmbiente" />
+
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_levantamentoBibliografico_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:layout_marginStart="95px"
+        app:layout_constraintTop_toBottomOf="@+id/levantamentoBibliografico"></Spinner>
+    <TextView
+        android:id="@+id/levantamentoSTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Levantamento decisões do STF:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_levantamentoBibliografico_spinner" />
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_STF_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:layout_marginStart="95px"
+        app:layout_constraintTop_toBottomOf="@+id/levantamentoSTF"></Spinner>
+    <TextView
+        android:id="@+id/revisãoBibliografica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Revisão bibliografica:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_STF_spinner" />
+
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_revisaoBibliografica_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:layout_marginStart="95px"
+        app:layout_constraintTop_toBottomOf="@+id/revisãoBibliografica"></Spinner>
+    <TextView
+        android:id="@+id/elaboracaoEscritaCaracteristica"
+        app:layout_constraintWidth_max="1100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginStart="45dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Elaboração de escrita e caracteristica:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_revisaoBibliografica_spinner" />
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_elaboracaoEscrita_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:layout_marginStart="95px"
+        app:layout_constraintTop_toBottomOf="@+id/elaboracaoEscritaCaracteristica"></Spinner>
+    <TextView
+        android:id="@+id/analiseDiscurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Analise do discurso:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_elaboracaoEscrita_spinner" />
+
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_analiseDiscurso_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/analiseDiscurso"
+        android:layout_marginStart="95px"/>
+
+    <TextView
+        android:id="@+id/RevisãoDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Revisão de dados:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_analiseDiscurso_spinner" />
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_revisãoDados_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/RevisãoDados"
+        android:layout_marginStart="95px"/>
+    <TextView
+        android:id="@+id/elaboracaoTextoFinal"
+        app:layout_constraintWidth_max="1100px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginStart="45dp"
+        android:ems="10"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="Elaboração e revisão de texto final:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_revisãoDados_spinner" />
+    <Spinner
+        android:id="@+id/activity_meio_ambiente_elaboracaoTextoFinal_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_meio_ambiente"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/elaboracaoTextoFinal"
+        android:layout_marginStart="95px"/>
+
+    <Button
+        android:id="@+id/submeterBotao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_botao_nome_tela_principal"
+        android:onClick="submeterDadosMeioAmbiente"
+        android:text="Submeter dados"
+        android:textColor="#000000"
+        android:textColorHint="#F6F0F2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_meio_ambiente_elaboracaoTextoFinal_spinner" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> d73b114f5ec37e4ecd71234b61e0535ff6c4a95f

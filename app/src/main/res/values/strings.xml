@@ -25,7 +25,11 @@
         <item>Concluido</item>
     </string-array>
 
+<<<<<<< HEAD
     <string-array name="spinner_agronomia">
+=======
+    <string-array name="spinner_meio_ambiente">
+>>>>>>> d73b114f5ec37e4ecd71234b61e0535ff6c4a95f
         <item>Como previsto</item>
         <item>Adiantado</item>
         <item>Atrasado</item>
@@ -33,6 +37,7 @@
         <item>Concluido</item>
     </string-array>
 
+<<<<<<< HEAD
     <string-array name="spinner_direito">
         <item>Como previsto</item>
         <item>Adiantado</item>
@@ -56,5 +61,7 @@
         <item>Não iniciado</item>
         <item>Concluido</item>
     </string-array>
+=======
+>>>>>>> d73b114f5ec37e4ecd71234b61e0535ff6c4a95f
 
 </resources>
