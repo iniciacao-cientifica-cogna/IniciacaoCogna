@@ -10,5 +10,275 @@
     android:paddingRight="20dp"
     tools:context="Activity.Farmacia">
 
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+
+      <TextView
+          android:id="@+id/cronograma"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Cronograma de Atividades"
+          android:textSize="20sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="30dp"
+          android:textColor="#000000"
+          />
+
+      <TextView
+          android:id="@+id/levantamento_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="20"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Levantamento Bibliográfico"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="5dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_levantamento_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/levantamento_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/tcle_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="20"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="TCLE e Aplicação do Questionário"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="5dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_tcle_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tcle_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/revisao_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="50"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Revisão Bibliográfica"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_revisao_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/vinculacao_direito"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/atividade_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="25"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Atividades no AVA"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_atividades_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/atividade_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/eac_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="20"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Participação de EAC"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_eac_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/eac_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/curso_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="20"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Curso de Formação do Discente"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="20dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_curso_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/curso_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/analise_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="20"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Análise dos dados"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="30dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_farmacia"
+          android:id="@+id/pergunta_analise_dados_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/analise_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <TextView
+          android:id="@+id/elaboracao_farmacia"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="20"
+          android:fontFamily="@font/baloo"
+          android:gravity="center"
+          android:text="Elaboração e revisão do texto final"
+          android:textSize="13sp"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="30dp"
+          android:textColor="#000000"
+          />
+
+      <Spinner
+          android:entries="@array/spinner_direito"
+          android:id="@+id/pergunta_elaboracao_farmacia"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/elaboracao_farmacia"
+          android:textColor="#000000">
+      </Spinner>
+
+      <Button
+          android:id="@+id/submeter"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/background_botao_nome_tela_principal"
+          android:onClick="submeterDadosCiencia"
+          android:text="Submeter dados"
+          android:textColor="#000000"
+          android:textColorHint="#F6F0F2"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="120dp"/>
+
+   </LinearLayout>
 
    </androidx.appcompat.widget.LinearLayoutCompat>

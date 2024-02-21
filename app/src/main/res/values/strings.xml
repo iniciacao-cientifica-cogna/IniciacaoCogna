@@ -25,4 +25,36 @@
         <item>Concluido</item>
     </string-array>
 
+    <string-array name="spinner_agronomia">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
+    <string-array name="spinner_direito">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
+    <string-array name="spinner_farmacia">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
+    <string-array name="spinner_meioambiente">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
+
 </resources>

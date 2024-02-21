@@ -1,23 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_telas_areas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_telas_areas"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context="Activity.MeioAmbiente">
 
-    <TextView
-        android:id="@+id/cronograma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/baloo"
-        android:gravity="center"
-        android:text="Cronograma de Atividades"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/cronograma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Cronograma de Atividades"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/levantamento_meioambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Levantamento Bibliográfico"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_meioambiente"
+            android:id="@+id/pergunta_levantamento_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/levantamento_meioambiente"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/stf_farmacia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Levantamento de Decisões STF"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_meioambiente"
+            android:id="@+id/pergunta_stf_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcle_farmacia"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/revisao_meioambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="50"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Revisão Bibliográfica"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_meioambiente"
+            android:id="@+id/pergunta_revisao_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/revisao_meioambiente"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/elaboracao_meioambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="25"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Elaboração e escrita das concepções e características"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_meioambiente"
+            android:id="@+id/pergunta_elaboracao_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elaboracao_meioambiente"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/analise_meioambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Análise do Discurso"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_meioambiente"
+            android:id="@+id/pergunta_analise_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analise_meioambiente"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/dados_meioambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Revisão dos Dados"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_farmacia"
+            android:id="@+id/pergunta_dados_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dados_meioambiente"
+            android:textColor="#000000">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/revicao_meioambiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Elaboração e revisão do texto final"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            />
+
+        <Spinner
+            android:entries="@array/spinner_farmacia"
+            android:id="@+id/pergunta_revicao_meioambiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/revicao_meioambiente"
+            android:textColor="#000000">
+        </Spinner>
+
+        <Button
+            android:id="@+id/submeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_botao_nome_tela_principal"
+            android:onClick="submeterDadosCiencia"
+            android:text="Submeter dados"
+            android:textColor="#000000"
+            android:textColorHint="#F6F0F2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="120dp"/>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
