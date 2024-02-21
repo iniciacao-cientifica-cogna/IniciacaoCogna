@@ -12,7 +12,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-<<<<<<< HEAD
         <TextView
             android:id="@+id/cronograma"
             android:layout_width="wrap_content"
@@ -278,32 +277,4 @@
             android:layout_marginLeft="100dp"/>
 
     </LinearLayout>
-
 </androidx.appcompat.widget.LinearLayoutCompat>
-=======
-
-    <TextView
-        android:id="@+id/levantamentoAgronomia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/baloo"
-        android:gravity="center"
-        android:text="Levantamento da agronomia"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cronograma" />
-
-    <Spinner
-        android:entries="@array/activity_plano_de_trabalho_spinner"
-        android:id="@+id/activity_agronomia_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levantamentoAgronomia"></Spinner>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> d73b114f5ec37e4ecd71234b61e0535ff6c4a95f
