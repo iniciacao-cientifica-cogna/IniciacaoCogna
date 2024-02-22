@@ -12,7 +12,13 @@ import com.example.cogna.R;
 
 public class MeioAmbiente extends AppCompatActivity {
 
-    Spinner pergunta_levantamento_meioambiente, pergunta_stf_meioambiente, pergunta_revisao_meioambiente, pergunta_elaboracao_meioambiente, pergunta_analise_meioambiente, pergunta_dados_meioambiente, pergunta_revicao_meioambiente;
+    Spinner pergunta_levantamento_meioambiente,
+            pergunta_stf_meioambiente,
+            pergunta_revisao_meioambiente,
+            pergunta_elaboracao_meioambiente,
+            pergunta_analise_meioambiente,
+            pergunta_dados_meioambiente,
+            pergunta_revicao_meioambiente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

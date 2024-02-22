@@ -10,7 +10,14 @@ import android.widget.ThemedSpinnerAdapter;
 import com.example.cogna.R;
 
 public class Direito extends AppCompatActivity {
-    Spinner pergunta_divulgacao_direito, pergunta_encontro_direito, pergunta_vinculacao_direito, pergunta_levantamento_direito, pergunta_periodicos_direito, pergunta_producao_direito, pergunta_participacao_direito, pergunta_relatoriafinal_direito;
+    Spinner pergunta_divulgacao_direito,
+            pergunta_encontro_direito,
+            pergunta_vinculacao_direito,
+            pergunta_levantamento_direito,
+            pergunta_periodicos_direito,
+            pergunta_producao_direito,
+            pergunta_participacao_direito,
+            pergunta_relatoriafinal_direito;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

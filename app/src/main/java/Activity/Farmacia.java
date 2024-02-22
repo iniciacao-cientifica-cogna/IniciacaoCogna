@@ -15,7 +15,14 @@ import model.util.ConfiguracaoBD;
 
 public class Farmacia extends AppCompatActivity {
 
-    Spinner pergunta_levantamento_farmacia, pergunta_tcle_farmacia, pergunta_revisao_farmacia, pergunta_atividades_farmacia, pergunta_eac_farmacia, pergunta_curso_farmacia, pergunta_analise_dados_farmacia, pergunta_elaboracao_farmacia;
+    Spinner pergunta_levantamento_farmacia,
+            pergunta_tcle_farmacia,
+            pergunta_revisao_farmacia,
+            pergunta_atividades_farmacia,
+            pergunta_eac_farmacia,
+            pergunta_curso_farmacia,
+            pergunta_analise_dados_farmacia,
+            pergunta_elaboracao_farmacia;
     private FirebaseAuth auth;
 
     //private val db = FirebaseFirestore.getInstance();

@@ -10,7 +10,14 @@ import com.example.cogna.R;
 
 public class Agronomia extends AppCompatActivity {
 
-    Spinner pergunta_reuniao_agronomia, pergunta_capacitacao_ciencia, pergunta_primeiro_agronomia, pergunta_discussao_agronomia, pergunta_coleta_agronomia, pergunta_relatorio_agronomia, pergunta_relatorio_final_agronomia, pergunta_relatoriafinal_agronomia;
+    Spinner pergunta_reuniao_agronomia,
+            pergunta_capacitacao_ciencia,
+            pergunta_primeiro_agronomia,
+            pergunta_discussao_agronomia,
+            pergunta_coleta_agronomia,
+            pergunta_relatorio_agronomia,
+            pergunta_relatorio_final_agronomia,
+            pergunta_relatoriafinal_agronomia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
