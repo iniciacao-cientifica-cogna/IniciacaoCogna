@@ -25,7 +25,7 @@
         <item>Concluido</item>
     </string-array>
 
-    <string-array name="spinner_meio_ambiente">
+    <string-array name="spinner_meioambiente">
         <item>Como previsto</item>
         <item>Adiantado</item>
         <item>Atrasado</item>
@@ -49,7 +49,7 @@
         <item>Concluido</item>
     </string-array>
 
-    <string-array name="spinner_meioambiente">
+    <string-array name="spinner_agronomia">
         <item>Como previsto</item>
         <item>Adiantado</item>
         <item>Atrasado</item>
@@ -57,7 +57,7 @@
         <item>Concluido</item>
     </string-array>
 
-    <string-array name="spinner_agronomia">
+    <string-array name="spinner_tic">
         <item>Como previsto</item>
         <item>Adiantado</item>
         <item>Atrasado</item>

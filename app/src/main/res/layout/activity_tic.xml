@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,4 +7,425 @@
     android:background="@drawable/background_telas_areas"
     tools:context="Activity.TIC">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/cronograma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Cronograma de Atividades"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/reuniao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Reunião para discussão do cronograma e etapas do Plano"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_reuniao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reuniao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/producao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Produção de conteúdo"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_producao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/producao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/elaboracao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="50"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Elaboração da arte sobre os conteúdos"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_elaboracao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/elaboracao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/apoio_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Apoio"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_apoio_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apoio_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/criacao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Criação de mídias digitais do projeto"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_criacao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/criacao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/gestao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Gestão das mídias"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_gestao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gestao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/edicao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Edição dos conteúdos"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_edicao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edicao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/ajustes_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Ajustes"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_ajustes_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ajustes_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/relatorio_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Relatório bolsista"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_relatorio_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relatorio_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/coordenador_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Relatório Coordenador"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_coordenador_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coordenador_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/reuniões_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Reuniões semanais"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_reunioes_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reuniões_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/avaliacao_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Avaliação 50% do projeto"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_avaliacao_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avaliacao_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/final_tic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Relatório final"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                />
+
+            <Spinner
+                android:entries="@array/spinner_tic"
+                android:id="@+id/pergunta_final_tic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/final_tic"
+                android:textColor="#000000">
+            </Spinner>
+
+            <Button
+                android:id="@+id/submeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_botao_nome_tela_principal"
+                android:onClick="submeterDadosCiencia"
+                android:text="Submeter dados"
+                android:textColor="#000000"
+                android:textColorHint="#F6F0F2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="120dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
