@@ -57,5 +57,12 @@
         <item>Concluido</item>
     </string-array>
 
+    <string-array name="spinner_agronomia">
+        <item>Como previsto</item>
+        <item>Adiantado</item>
+        <item>Atrasado</item>
+        <item>Não iniciado</item>
+        <item>Concluido</item>
+    </string-array>
 
 </resources>
