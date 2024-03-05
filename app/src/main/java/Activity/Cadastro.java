@@ -87,8 +87,6 @@ public class Cadastro extends AppCompatActivity {
         Intent i = new Intent(Cadastro.this,MainActivity.class);
         startActivity(i);
     }
-
-
     private void cadastrarUsuario() {
         autenticacao = ConfiguracaoBD.firebaseautenticacao();
         autenticacao.createUserWithEmailAndPassword(

@@ -55,4 +55,6 @@ dependencies {
     //autenticação
     implementation("com.google.firebase:firebase-auth:22.3.1")
 
+    implementation("com.google.firebase:firebase-database:19.2.0")
+
 }

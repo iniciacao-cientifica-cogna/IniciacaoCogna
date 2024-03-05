@@ -24,10 +24,8 @@ import model.util.ConfiguracaoBD;
 
 public class MainActivity extends AppCompatActivity {
     //criaçao de botão para redirecionar tela
-    Button botaoCadastro;
-
+    Button botaoCadastro, botaoAcessar;
     EditText campoEmail, campoSenha;
-    Button botaoAcessar;
     private FirebaseAuth auth;
 
     @Override
