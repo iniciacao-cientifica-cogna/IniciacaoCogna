@@ -9,12 +9,14 @@ android {
     namespace = "com.example.cogna"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.cogna"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,7 +37,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -56,5 +57,9 @@ dependencies {
     implementation("com.google.firebase:firebase-auth:22.3.1")
 
     implementation("com.google.firebase:firebase-database:19.2.0")
+
+    //implementation for graph
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
 
 }

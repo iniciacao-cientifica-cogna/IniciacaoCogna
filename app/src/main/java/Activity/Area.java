@@ -48,4 +48,8 @@ public class Area extends AppCompatActivity {
         Intent TelaAgronomia = new Intent(getApplicationContext(), Agronomia.class);
         startActivity(TelaAgronomia);
     }
+    public void relatorio(View view){
+        Intent TelaRelatorio = new Intent(getApplicationContext(), Relatorio.class);
+        startActivity(TelaRelatorio);
+    }
 }

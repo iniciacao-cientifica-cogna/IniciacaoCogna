@@ -105,6 +105,15 @@
             android:text="Tecnologia da Informação e Comunicação"
             android:fontFamily="@font/baloo"
             />
+
+        <Button
+            android:id="@+id/relatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="relatorio"
+            android:text="Relatorio"
+            android:fontFamily="@font/baloo"
+            />
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
