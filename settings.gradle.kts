@@ -5,6 +5,7 @@ pluginManagement {
         gradlePluginPortal()
         maven (  "https://jitpack.io" )
 
+
     }
 }
 dependencyResolutionManagement {

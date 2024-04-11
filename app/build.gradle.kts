@@ -60,6 +60,8 @@ dependencies {
 
     //implementation for graph
     implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation ("com.github.lecho:hellocharts-library:1.5.8@aar")
+
 
 
 }
